@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Kirtan | Portfolio</title>
+        <meta name="Description" content="Portfolio"/>
+        <meta name="Keywords" content="hariyo, bonsai, nepal, plants, e-commerce"/>
+        <meta name="Author" content="Kirtan"/>
+        <link rel="Stylesheet" href="../CSS/CV.css"> <!--linking the css file-->
+        <link rel="icon" href="../Photos/logo.png">  <!--adding logo in the tab of the webpage-->
+        <!-- This internal css contains the Styling and design of all the common parts of all the Webpages -->
+        <style>
+        /* Styling the whole body of the Webpage */
+        body
+        {
+        background-color: rgb(255, 246, 240);
+        margin: 0;
+        padding: 0;
+        }
+        /* Styling the paragraph of the Webpage */
+        p
+        {
+        font-family:Arial, Helvetica, sans-serif;
+        }
+        /* Adding Background Color of Navigation Bar */
+        .navbar
+        {
+        background-color: rgba(117, 210, 30, 0.796);
+        }
+        /* Styling the Navigation section */
+        nav
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        /* Styling the layout of the list in Navigation Bar */
+        nav ul li
+        {
+            list-style-type: none;
+            display: inline-block;
+            padding: 5px 27px;
+        }
+        /* Styling the name of the list in navigation bar */
+        nav ul li a
+        {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 23px;
+        }
+        /* Adding animation to the list */
+        nav ul li a:hover
+        {
+            color: blueviolet; 
+        }
+        /* Styling the login/signup button in the navigation bar */
+        .loginsignupbutton
+        {
+            border: none;
+            background-color: burlywood;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 15px;
+            margin-right: 10px;
+        }
+        /* Adding animation to the login/signup button */
+        .loginsignupbutton:hover
+        {
+            transform: scale(1.1);
+            cursor: pointer;
+            color: brown;
+        }
+        /* Styling the logo in the navigation bar */
+        .logo
+        {
+            margin-left: 0%;
+        }
+        /* Styling the Search bar */
+        .searchbar
+        {
+            border: 1px solid black;
+            width: 340px;
+            height: 25px;
+            margin-top: 2px;
+            border-radius: 4px;
+        }
+        /* Styling the go button of the Search bar */
+        .gobutton
+        {
+            font-weight: bold;
+            width: 40px;
+            height: 28px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        /* Adding animation to the go button of the search bar */
+        .gobutton:hover
+        {
+            background-color: rgba(128, 128, 128, 0.71);
+        }
+        /* Adding background color to the whole footer */
+        footer
+        {
+            background-color:rgba(222, 184, 135, 0.649);
+        }
+        /* Styling the Follow us header in the footer */
+        .followus
+        {
+            text-decoration: underline; 
+            margin-top: 10px;
+            font-style: italic; 
+            font-weight: bold;
+            font-size: 28px;
+        }
+        /* Styling the layout of the footer box */
+        .footerbox
+        {
+            display: flex;
+        }
+        /* Styling and layout of the of the follow us content which will take 33.3% of the footer section */
+        .socialbox
+        {
+            flex: 33.33%;
+            padding-left: 10px;
+        }
+        /* Layout of the contact us content which will take 33.3% of the footer section */
+        .customer
+        {
+            flex: 33.33%;
+        }
+        /* Layout of the Payments partner content which will take 33.3% of the footer section */
+        .payments
+        {
+            flex: 33.33%;
+        }
+        </style>
+    <!-- End style -->
+    </head>
+    <!-- End Head -->
+
+    <!-- Start of body which will conatain all the main contents shown in the Webpage -->
+        <body>
+            <!-- This division contains the whole navigation bar -->
+            <div class="navbar">  
+                <!-- This nav section contains all the content of the Navigation bar -->
+                <nav>
+                    <div class="logo">
+                    <a href="../Home.html"><img src="../Photos/logo.png" alt="logo" height="120px" width="130px"></a>
+                    </div>
+
+                <!-- This form displays the Search bar in the navigation bar -->
+                    <form onsubmit="available()">
+                        <input type="text" name="search" class="searchbar" placeholder="Search for products...">
+                        <input type="submit" value="Go" class="gobutton">
+                    </form>
+                
+                <!-- This section shows the list of pages in the website in the navigation bar -->
+                    <ul>
+                        <li><a href="../Home.html">Home</a></li>
+                        <li><a href="Products.html">Products</a></li>
+                        <li><a href="About us.html">About Us</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="Research.html">Research</a></li>
+                    </ul>
+                
+                <!-- This is the login/signup button shown in the navigation bar -->
+                    <div>
+                        <a href="Login.html" target="_blank"><button type="button" class="loginsignupbutton">Log In / Sign Up</button></a>
+                    </div>
+                </nav>
+                <!-- End of naviagtion content -->
+            </div>
+            <!-- End of Navigation bar-->
+            
+            <!-- This division contains the whole CV shown in the website -->
+            <div class="cvcontainer">
+                <!-- This division displays the contents shown in the left column of the CV -->
+                <div class="leftcolumn">
+
+                    <!-- This division contains profile image and Name as shown in the website -->
+                    <div class="profileimg">
+                        <img src="../Photos/kirtan.png" width="40%">
+                    <h1>Kirtan Maharjan</h1><hr>
+                    </div>
+                    <!-- End of profile image and name division -->
+                    
+                    <!-- This division displays all the contents of the column -->
+                    <div class="leftcontent">
+                        <h2>Name:</h2>
+                        <p>Kirtan Maharjan</p>
+                        <h2>Age:</h2>
+                        <p>18yrs</p>
+                        <h2>Address:</h2>
+                        <p>Imadol, Lalitpur, Nepal</p>
+                        <h2>Email:</h2>
+                        <p>kirtanmhrzn@gmail.com</p>
+                        <h2>Contact No:</h2>
+                        <p>+977 9840087458</p>
+                        <h2>Occupation:</h2>
+                        <p>College Student</p>
+                        <h2>Social:</h2>
+                        <!-- This division contains the social profile as shown in the cv of the Webpage -->
+                        <div class="cvsocialbox">
+                            <a href="https://www.facebook.com/kritan.maharjan.750" target="_blank"><img src="../Photos/facebook.png"></a>
+                            <a href="https://www.instagram.com/_kryp.ton_/" target="_blank"><img src="../Photos/instagram.png"></a>
+                        </div>
+                        <!-- End of division class = cvsocialbox -->
+                    </div> 
+                    <!-- End of division class=leftcontent-->
+                </div>
+                <!-- End of division class=leftcolumn -->
+
+                <!-- This division shows contains all the contents present in the right column of the CV -->
+                <div class="rightcolumn">
+                    <!-- This divison displays the contents shown in the right column -->
+                    <div class="rightcontent">
+                        <h1>About Me:</h1>
+                        <p>
+                            I am a college student now pursuing a Bachelor of Science with Honors in Computing (Bsc hons. Computing).
+                            Despite the fact that I am a beginner, I have always been interested in, and wanted to follow, the IT sector.
+                            I have been working on enhancing my programming abilities in HTML, CSS, and JavaScript because I believe web development to be highly intriguing. This website is also my first group project.
+                            I am a member of my group, which consists of three other people, on a project offered by the college.  
+                            I am a type of person who can do if he tries but is lazy to start. I am a helpful person or you can say I am always ready to help anyone if I can.
+                        </p>
+
+                        <h1>Educational Qualification:</h1>
+                        <!-- This divison styles the font size of Education qualification -->
+                        <div style="font-size: 18px;">
+                        <p>
+                            I had completed my Primary, Secondary and Higher Secondary education from Little Angels' School, Hattiban, Lalitpur.
+                            I have completed my Higher Secondary education from Science field with the following subjects:
+                            <ul>
+                                <li>English</li>
+                                <li>Nepali</li>
+                                <li>Chemistry</li>
+                                <li>Physics</li>
+                                <li>Mathematics</li>
+                                <li>Computer Science</li>
+                            </ul>
+                            I am currently pursuing Bsc hons Computing at Islington college, Kathmandu, Nepal which is affiliated to London Metropolitan University with the following modules:
+                            <ul>
+                                <li>Information System</li>
+                                <li>Programming</li>
+                                <li>Computer Hardware and Software Architecture</li>
+                                <li>Logic & Problem Solving</li>
+                                <li>Fundamentals of Computing</li>
+                            </ul>
+                        </p>
+                        </div>
+                        <!-- End of div style =""-->
+
+                        <!-- End of div style = "" -->
+                        <h1>Technical Skills:</h1>
+                        <div style="font-size: 18px;">
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>MySql</li>
+                                <li>Java</li>
+                             </ul>
+                        </div>
+
+                        <h1>Soft Skills:</h1>
+                        <div style="font-size: 18px;">
+                            <ul>
+                                <li>Team Work</li>
+                                <li>Time management</li>
+                                <li>Hardworking</li>
+                                <li>Communication</li>
+                                <li>Critical Thinking</li>
+                             </ul>
+                        </div>
+
+                        <h1>Additional Information:</h1>
+                        <!-- This divison styles the font size of Additional Information -->
+                        <div style="font-size: 18px;">
+                            <p>
+                            <span>Languages Spoken:</span>
+                                <ul>
+                                    <li>Nepali</li>
+                                    <li>English</li>
+                                    <li>Newari</li>
+                                </ul>
+                            <span>Hobbies:</span>
+                                <ul>
+                                    <li>To play Football and Table Tennis  </li>
+                                    <li>Gaming</li>
+                                    <li>Travelling</li>
+                                    <li>Reading Books</li>
+                                    <li>Hanging out with friends</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End of div class = rightcontent -->
+                </div>
+                <!-- End of div class = rightcolumn -->
+            </div>
+            <!-- End of div class = cvcontainer -->
+
+
+            <!-- This is the footer section fot he Web page -->
+            <footer>
+                <!-- This division contains the whole footer contents -->
+                <div class="footerbox">
+                    <!-- This division contains the contents of the "Follow us" header in the footer -->
+                    <div class="socialbox">
+                        <table width="80%">
+                            <h1 class="followus">Follow us on:</h1>
+                            <tr>
+                                <td><a href="https://www.facebook.com" target="_blank"><img src="../Photos/facebook.png" alt="fblogo" height="60px" width="60px"></a></td>
+                                <td><a href="https://www.instagram.com" target="_blank"><img src="../Photos/instagram.png" alt="instalogo" height="60px" width="60px"></a></td>
+                                <td><a href="https://twitter.com" target="_blank"><img src="../Photos/twitter.png"  alt="twitterlogo" height="60px" width="60px"></a></td>
+                            </tr>
+        
+                            <tr class="followustext">
+                                <td>Facebook</td>
+                                <td>Instagram</td>
+                                <td>Twitter</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- End of div class = socialbox -->
+                    
+                    <!-- This division contains the contents of the "Contact Us" header in the footer-->
+                    <div class="customer">
+                        <h2 style="text-decoration: underline;">Contact Us:</h2>
+                        <div style="font-size: 14px;">
+                        <h3>Email:</h3>
+                        <a href="https://mail.google.com" target="_blank" style="text-decoration: none; color: black;"><p>hariyosupport191@gmail.com</p></a>
+                        <h3>Phone No:</h3>
+                        <a href="https://web.whatsapp.com" target="_blank" style="text-decoration: none; color: black;"><p>+977 9876543210</p></a>
+                        <h3>Address:</h3>
+                        <a href="https://www.google.com/maps/place/Maharajgunj,+Kathmandu+44600/@27.7353566,85.3226995,15z/data=!3m1!4b1!4m5!3m4!1s0x39eb193854e20abb:0x8ff36d1f00e10346!8m2!3d27.7364789!4d85.3304212" target="_blank" style="text-decoration: none; color: black;">
+                            <p>Maharajgunj, Kathmandu, Nepal.</p>
+                        </a>
+                        </div>
+                    </div>
+                    <!-- End of div class = customer -->
+    
+                    <!-- This division contains the contents of the "Payment Partners" header in the footer -->
+                    <div class="payments">
+                        <!-- Table format is used to layout the contents -->
+                        <table width="100%">
+                            <h1 class="followus">Payment Partners:</h1>
+                            <!-- First row of the table -->
+                            <tr>
+                                <td><img src="../Photos/esewa.png" alt="esewa" height="50px" width="100px"></td>
+                                <td><img src="../Photos/khalti.png" alt="khalti" height="50px" width="100px"></td>
+                                <td><img src="../Photos/visa.png"  alt="Visa" height="45px" width="90px"></td>
+                                <td><img src="../Photos/ime.png"  alt="IMEpay" height="90px" width="90px"></td>
+                            </tr>
+                            <!-- End of first row -->
+                            
+                            <!-- Second row of the table -->
+                            <tr>
+                                <td><img src="../Photos/mastercard.png" alt="MasterCard" height="50px" width="100px"></td>
+                                <td><img src="../Photos/Unionpay.png" alt="Unionpay" height="50px" width="90px"></td>
+                                <td><img src="../Photos/Bank.png" alt="BankTransfer" height="120px" width="120px"></td>
+                                <td><img src="../Photos/COD.png" alt="CashOnDelivery" height="80px" width="80px"></td>
+                            </tr>
+                            <!-- End of second row -->
+                        </table>
+                    </div>
+                    <!-- End of div class = payments -->
+                </div>
+                <!-- End of div class = "footerbox" -->
+                <p align="Center" style="color: grey;"><b>&copy; Hariyo 2022-23</b></p>
+            </footer>
+            <!-- End of footer section -->
+        </body>
+        <!-- End of body of the Webpage-->
+        <script>
+            function available()
+            {
+                alert("Search feature will be available soon !!")
+            }
+        </script>
+</html>
+<!-- End of the Webpage -->

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Research</title>
+        <meta name="Description" content="Research Page"/>
+        <meta name="Keywords" content="hariyo, bonsai, nepal, plants, e-commerce"/>
+        <meta name="Author" content="Jayavir"/>
+        <link rel="Stylesheet" href="../CSS/Research.css"> <!--linking the css file-->
+        <link rel="icon" href="../Photos/logo.png">  <!--adding logo in the tab of the webpage-->
+        <style>
+        body
+        {
+        background-color: rgb(255, 246, 240);
+        margin: 0;
+        padding: 0;
+        }
+
+        p
+        {
+        font-family:Arial, Helvetica, sans-serif;
+        }
+
+        .navbar
+        {
+        background-color: rgba(117, 210, 30, 0.796);
+        }
+        nav
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        nav ul li
+        {
+            list-style-type: none;
+            display: inline-block;
+            padding: 5px 27px;
+        }
+        nav ul li a
+        {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 23px;
+        }
+        nav ul li a:hover
+        {
+            color: blueviolet; 
+        }
+        
+        .loginsignupbutton
+        {
+            border: none;
+            background-color: burlywood;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 15px;
+            margin-right: 10px;
+        }
+        .loginsignupbutton:hover
+        {
+            transform: scale(1.1);
+            cursor: pointer;
+            color: brown;
+        }
+
+        .logo
+        {
+            margin-left: 0%;
+        }
+        .searchbar
+        {
+            border: 1px solid black;
+            width: 340px;
+            height: 25px;
+            margin-top: 2px;
+            border-radius: 4px;
+        }
+        .gobutton
+        {
+            font-weight: bold;
+            width: 40px;
+            height: 28px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        .gobutton:hover
+        {
+            background-color: rgba(128, 128, 128, 0.71);
+        }
+
+        footer
+        {
+            background-color:rgba(222, 184, 135, 0.649);
+        }
+        .followus
+        {
+            text-decoration: underline; 
+            margin-top: 10px;
+            font-style: italic; 
+            font-weight: bold;
+            font-size: 28px;
+        }
+        .footerbox
+        {
+            display: flex;
+        }
+        .socialbox
+        {
+            flex: 33.33%;
+            padding-left: 10px;
+        }
+        .customer
+        {
+            flex: 33.33%;
+        }
+        .payments
+        {
+            flex: 33.33%;
+        }
+
+        </style>
+    </head>
+        <body>
+            <div class="navbar">
+                <nav>
+                    <div class="logo">
+                    <a href="../Home.html"><img src="../Photos/logo.png" alt="logo" height="120px" width="130px"></a>
+                    </div>
+
+                    <form onsubmit="available()">
+                        <input type="text" name="search" class="searchbar" placeholder="Search for products...">
+                        <input type="submit" value="Go" class="gobutton">
+                    </form>
+                   
+                    <ul>
+                        <li><a href="../Home.html">Home</a></li>
+                        <li><a href="Products.html">Products</a></li>
+                        <li><a href="About us.html">About Us</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="Research.html">Research</a></li>
+                    </ul>
+                    
+                    <div>
+                        <a href="Login.html" target="_blank"><button type="button" class="loginsignupbutton">Log In / Sign Up</button></a>
+                    </div>
+                </nav>
+            </div>
+
+
+            <h1>Products Page reference:</h1>
+            <div class="researchcontainer">
+                <div class="row">
+                    <div class="reference">
+                        <h2>Reference:</h2>
+                        <a href="https://www.easternleaf.com/Juniper-Bonsai-Trees-s/12.htm" target="_blank"><img src="../Photos/productsreference.png"></a>
+                    </div>
+                    <div class="output">
+                        <h2>Actual output:</h2>
+                        <a href="Products.html"><img src="../Photos/productsoutput.png"></a>
+                    </div>
+                </div>
+                <div class="description">
+                <p>The reference for our product page has been taken from an e-commerce website called "eastern LEAF".
+                   We have used table method to display our products. We have included photo, name, small description, price and discounted price which is also present in the reference page. 
+                   Additionally we have added a option "Buy now" and "Add to Cart" which is not there in the reference and also we have excluded ratings from our layout.<br>
+                   Click the images above to view the references and actual pages respectively.</p>
+                </div>
+            </div>
+            <h1>Footer reference:</h1>
+            <div class="researchcontainer">
+                <div class="row">
+                    <div class="reference">
+                        <h2>Reference:</h2>
+                        <a href="https://smartdoko.com" target="_blank"><img src="../Photos/footerreference.png"></a>
+                    </div>
+                    <div class="output">
+                        <h2>Actual output:</h2>
+                        <img src="../Photos/footeroutput.png">
+                    </div>
+                </div>
+                <div class="description">
+                <p>The reference for our footer has been taken from an e-commerce website called "SmartDoko". 
+                   We have used flex and table both to display the content of the footer. 
+                   We have included social app and contact us section just as shown in the reference and instead of adding 
+                   subscription which is there in the reference we have included payment partner.<br>
+                   Click the reference image above to view the reference site and to see the actual footer please scroll down to the bottom of the page.</p>
+                </div>
+            </div>
+            <h1>Login & Sign Up Page reference:</h1>
+            <div class="researchcontainer">
+                <div class="row">
+                    <div style="flex: 25%; margin-left: 10px; margin-inline-end: 15px;">
+                        <h2>Reference:</h2>
+                        <a href="https://passport.alibaba.com/icbu_login.htm?spm=a2700.8293689.scGlobalHomeHeader.436.1bb967afFAyZOX&tracelog=hd_signin&return_url=https%3A%2F%2Fwww.alibaba.com%2F%3Fsrc%3Dsem_ggl%26field%3DUG%26from%3Dsem_ggl%26cmpgn%3D9922923046%26adgrp%3D97780319262%26fditm%3D%26tgt%3Dkwd-932673495827%26locintrst%3D%26locphyscl%3D1011034%26mtchtyp%3De%26ntwrk%3Dg%26device%3Dc%26dvcmdl%3D%26creative%3D432272607997%26plcmnt%3D%26plcmntcat%3D%26aceid%3D%26position%3D%26gclid%3DCj0KCQiA8aOeBhCWARIsANRFrQF8PJVgTV35-rtb5iQQRJMaQ7JM7duAxIljwpDLMnbK2JrrQH_RxQgaApiKEALw_wcB" target="_blank">
+                            <img src="../Photos/loginreference.png">
+                        </a>
+                    </div>
+                    <div style="flex: 25%; margin-inline-end: 15px; height: 100%;">
+                        <a href="https://passport.alibaba.com/member/us/reg/fast/union_reg.htm?_regfrom=ICBU_UNION_REG&_lang=en_US&_regbizsource=main_page&tg=https%3A%2F%2Fwww.alibaba.com%2F%3Fsrc%3Dsem_ggl%26field%3DUG%26from%3Dsem_ggl%26cmpgn%3D9922923046%26adgrp%3D97780319262%26fditm%3D%26tgt%3Dkwd-932673495827%26locintrst%3D%26locphyscl%3D1011034%26mtchtyp%3De%26ntwrk%3Dg%26device%3Dc%26dvcmdl%3D%26creative%3D432272607997%26plcmnt%3D%26plcmntcat%3D%26aceid%3D%26position%3D%26gclid%3DCj0KCQiA8aOeBhCWARIsANRFrQF8PJVgTV35-rtb5iQQRJMaQ7JM7duAxIljwpDLMnbK2JrrQH_RxQgaApiKEALw_wcB" target="_blank">
+                            <img src="../Photos/Signupreference.png" height="350px" style="padding-top: 10px;">
+                        </a>
+                    </div>
+                    <div class="output">
+                        <h2>Actual output:</h2>
+                        <a href="Login.html"><img src="../Photos/loginsignup.png"></a>
+                    </div>
+                </div>
+                <div class="description">
+                <p>The reference for our Login/Sign Up page has been taken from an e-commerce website called "Alibaba". 
+                   We have used form and flex method to display the content. 
+                   The log in and signup page are separate in the reference but we have added both in the same page. 
+                   We have excluded "Sign in from social media option" in our login section and we have excluded "Trade role, confirm password, company name and verify" 
+                   option from our page also the layout for the sign up section is bit different from that of reference.<br>
+                   Click the images above to view the references and actual pages respectively.</p>
+                </div>
+            </div>
+            <h1>Payment Page reference:</h1>
+            <div class="researchcontainer">
+                <div class="row">
+                    <div class="reference">
+                        <h2>Reference:</h2>
+                        <a href="https://pay.ebay.com/rgxo?action=view&sessionid=1390164778" target="_blank"><img src="../Photos/paymentreference.png"></a>
+                    </div>
+                    <div class="output">
+                        <h2>Actual output:</h2>
+                        <a href="Payment.html"><img src="../Photos/payment.png"></a>
+                    </div>
+                </div>
+                <div class="description">
+                <p>The reference for our Payment/Checkout page has been taken from an e-commerce website called "ebay". 
+                   We have used form and flex method to display the content of the page. We have added an additional option in our page 
+                   which is payment method and quantiy which is not there in the reference.<br>
+                   Click the images above to view the references and actual pages respectively.</p>
+                </div>
+            </div>
+            <h1>Blog Page reference:</h1>
+            <div class="researchcontainer">
+                <div class="row">
+                    <div class="reference">
+                        <h2>Reference:</h2>
+                        <a href="https://www.bonsaiempire.com/blog" target="_blank"><img src="../Photos/blogreference.png"></a>
+                    </div>
+                    <div class="output">
+                        <h2>Actual output:</h2>
+                        <a href="Blog.html"><img src="../Photos/blogoutput.png"></a>
+                    </div>
+                </div>
+                <div class="description">
+                <p>The reference for our blog page has been taken from a website called "Bonsai empire". 
+                   We have used flex method to display the content of the page. Also we have not added "Read More" option 
+                   from reference which would have opened a new page showing the details. But instead we have only added a short description 
+                   about the topic.<br> Click the images above to view the references and actual pages respectively.</p>
+                </div>
+            </div>
+            <h1>Feedback form reference: </h1>
+            <div class="researchcontainer">
+                <div class="row">
+                    <div class="reference">
+                        <h2>Reference:</h2>
+                        <a href="https://www.sitsi.com/send-us-your-feedback" target="_blank"><img src="../Photos/feedbackreference.png" height="450px"></a>
+                    </div>
+                    <div class="output">
+                        <h2>Actual output:</h2>
+                        <a href="About us.html"><img src="../Photos/feedbackoutput.png"></a>
+                    </div>
+                </div>
+                <div class="description">
+                <p>The reference for our feedback form has been taken from the website called "sitsi". We have used form and flex method 
+                   to display the content. We have also changed the layout of the form and we have excluded "phone number, company name, department name" from our form.<br>
+                   Click the images above to view the references and actual pages respectively.</p>
+                </div>
+            </div>
+
+            <footer>
+                <div class="footerbox">
+    
+                    <div class="socialbox">
+                        <table width="80%">
+                            <h1 class="followus">Follow us on:</h1>
+                            <tr>
+                                <td><a href="https://www.facebook.com" target="_blank"><img src="../Photos/facebook.png" alt="fblogo" height="60px" width="60px"></a></td>
+                                <td><a href="https://www.instagram.com" target="_blank"><img src="../Photos/instagram.png" alt="instalogo" height="60px" width="60px"></a></td>
+                                <td><a href="https://twitter.com" target="_blank"><img src="../Photos/twitter.png"  alt="twitterlogo" height="60px" width="60px"></a></td>
+                            </tr>
+        
+                            <tr class="followustext">
+                                <td>Facebook</td>
+                                <td>Instagram</td>
+                                <td>Twitter</td>
+                            </tr>
+                        </table>
+                    </div>
+    
+                    <div class="customer">
+                        <h2 style="text-decoration: underline;">Contact Us:</h2>
+                        <div style="font-size: 14px;">
+                        <h3>Email:</h3>
+                        <a href="https://mail.google.com" target="_blank" style="text-decoration: none; color: black;"><p>hariyosupport191@gmail.com</p></a>
+                        <h3>Phone No:</h3>
+                        <a href="https://web.whatsapp.com" target="_blank" style="text-decoration: none; color: black;"><p>+977 9876543210</p></a>
+                        <h3>Address:</h3>
+                        <a href="https://www.google.com/maps/place/Maharajgunj,+Kathmandu+44600/@27.7353566,85.3226995,15z/data=!3m1!4b1!4m5!3m4!1s0x39eb193854e20abb:0x8ff36d1f00e10346!8m2!3d27.7364789!4d85.3304212" target="_blank" style="text-decoration: none; color: black;">
+                            <p>Maharajgunj, Kathmandu, Nepal.</p>
+                        </a>
+                        </div>
+                    </div>
+    
+                    <div class="payments">
+                        <table width="100%">
+                            <h1 class="followus">Payment Partners:</h1>
+                            <tr>
+                                <td><img src="../Photos/esewa.png" alt="esewa" height="50px" width="100px"></td>
+                                <td><img src="../Photos/khalti.png" alt="khalti" height="50px" width="100px"></td>
+                                <td><img src="../Photos/visa.png"  alt="Visa" height="45px" width="90px"></td>
+                                <td><img src="../Photos/ime.png"  alt="IMEpay" height="90px" width="90px"></td>
+                            </tr>
+        
+                            <tr>
+                                <td><img src="../Photos/mastercard.png" alt="MasterCard" height="50px" width="100px"></td>
+                                <td><img src="../Photos/Unionpay.png" alt="Unionpay" height="50px" width="90px"></td>
+                                <td><img src="../Photos/Bank.png" alt="BankTransfer" height="120px" width="120px"></td>
+                                <td><img src="../Photos/COD.png" alt="CashOnDelivery" height="80px" width="80px"></td>
+                            </tr>
+                        </table>
+                    </div>
+    
+                </div>
+                <p align="Center" style="color: grey;"><b>&copy; Hariyo 2022-23</b></p>
+            </footer>
+    
+
+
+        </body>
+        <script>
+            function Hello()
+            {
+                alert("Your item has been suscessfully added to cart !!! :)");
+            }
+            function available()
+            {
+                alert("Search feature will be available soon !!")
+            }
+        </script>
+</html>

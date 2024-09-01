@@ -1,0 +1,70 @@
+/* Styles and layouts of the whole contents of the CV */
+.cvcontainer
+{
+    display: flex;
+    box-sizing: border-box;
+    height: 100%;
+    width: 80%;
+    margin-left: 130px;
+    background-color: white;
+}
+/* Styles the left column of the CV */
+.leftcolumn
+{
+    flex: 30%;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* Styles the Profile image in the CV */
+.profileimg
+{
+    text-align: center;
+    margin-top: 5px;
+}
+hr
+{
+    width: 90%;
+}
+/* Styles the contents shown in the left column and right column */
+.leftcontent, .rightcontent
+{
+   margin-left: 25px;
+}
+/* Styles the paragraph of the contents of left column */
+.leftcontent p
+{
+    font-size: 18px;
+}
+/* Layout of the contents displayed inside the header "Social" in the CV */
+.cvsocialbox
+{
+    display: flex;
+}
+/* Styles the Images of the header "Social" in the CV */
+.cvsocialbox img
+{
+    width: 60px;
+    height: 60px;
+    margin-inline-end: 22px;
+    margin-bottom: 5px;
+}
+/* Styles the right column of the CV */
+.rightcolumn
+{
+    flex: 60%;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 9px;
+}
+/* Styles the paragraph of the Right column of the CV */
+.rightcontent p
+{
+    font-size: 17px;
+}
+/* Styles the span tag */
+.rightcontent span
+{
+    font-weight: bold;
+}

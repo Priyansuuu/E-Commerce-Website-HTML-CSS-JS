@@ -1,0 +1,134 @@
+.banner
+{
+    width: 100%;
+}
+.banner img
+{
+    width: 100%;
+    height: 50%;
+    border-radius: 16px;
+    padding-top: 3px;
+}
+.bannertext
+{
+ position:absolute;
+ top: 17%;
+ left: 3%;
+ font-size: 38px;
+ font-family: 'Courier New', Courier, monospace;
+ color:black;
+ font-weight: bold;
+}
+.bannerquote
+{
+    position: absolute;
+    top: 51%;
+    left: 3%;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif,;
+    color:rgb(255, 98, 42);
+    font-weight: bolder;
+}
+
+.bonsaiinfo
+{
+    background-color: antiquewhite;
+    border-radius: 18px;
+    padding: 1px 9px;
+}
+
+.review
+{
+    background-color: beige;
+    border-radius: 18px;
+    padding: 2px;
+    margin-top: 30px;
+}
+
+.newarrivals
+{
+    border: 1px solid; 
+    border-radius: 10px;
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+hr
+{
+    width: 90%;
+}
+
+.buynow
+{
+    text-decoration: none; 
+    color: black; 
+    display: inline-block; 
+    border: 1px solid black; 
+    padding: 1%; 
+    font-size: 20px;
+}
+
+.button2
+{
+    border: none;
+    background-color: burlywood;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-inline: 3px;
+    background-color:darksalmon;
+}
+.button2:hover
+{
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.products, .members
+{
+    width: 100%;
+    border-spacing: 10px;   
+}
+.productsimg
+{
+    border-radius: 18px;
+    width: 320px;
+    height: 300px;
+    margin-top: 10px;
+}
+.productsimg:hover
+{
+    transform: scale(.97);
+    cursor: pointer;
+}
+.discount
+{
+    text-decoration:line-through; 
+    color:rgba(220, 20, 60, 0.777);
+    font-style:italic;
+}
+
+.shopmorecontainer,.knowmorecontainer
+{
+    text-align: center;
+    margin: 20px;
+}
+.shopmore,.knowmore
+{
+   text-decoration: none;
+   border: 1px solid black;
+   padding: 5px;
+   font-size: 22px;
+   color: white;
+   font-weight: bold;
+   font-style: italic;
+   background-color: rgba(0, 0, 0, 0.814);
+}
+.shopmore:hover,.knowmore:hover
+{
+    background-color: blueviolet;
+}
+
+

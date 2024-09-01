@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <meta name="Description" content="Home Page"/>
+        <meta name="Keywords" content="hariyo, bonsai, nepal, plants, e-commerce"/>
+        <meta name="Author" content="Jayavir"/>
+        <link rel="Stylesheet" href="CSS/Home.css"> <!--linking the css file-->
+        <link rel="icon" href="Photos/logo.png">  <!--adding logo in the tab of the webpage-->
+        <style>
+        body
+        {
+        background-color: rgb(255, 246, 240);
+        margin: 0;
+        padding: 0;
+        }
+
+        p
+        {
+        font-family:Arial, Helvetica, sans-serif;
+        }
+
+        .navbar
+        {
+        background-color: rgba(117, 210, 30, 0.796);
+        }
+        nav
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        nav ul li
+        {
+            list-style-type: none;
+            display: inline-block;
+            padding: 5px 27px;
+        }
+        nav ul li a
+        {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 23px;
+        }
+        nav ul li a:hover
+        {
+            color: blueviolet; 
+        }
+        
+        .loginsignupbutton
+        {
+            border: none;
+            background-color: burlywood;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 15px;
+            margin-right: 10px;
+        }
+        .loginsignupbutton:hover
+        {
+            transform: scale(1.1);
+            cursor: pointer;
+            color: brown;
+        }
+
+        .logo
+        {
+            margin-left: 0%;
+        }
+        .searchbar
+        {
+            border: 1px solid black;
+            width: 340px;
+            height: 25px;
+            margin-top: 2px;
+            border-radius: 4px;
+        }
+        .gobutton
+        {
+            font-weight: bold;
+            width: 40px;
+            height: 28px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        .gobutton:hover
+        {
+            background-color: rgba(128, 128, 128, 0.71);
+        }
+
+        footer
+        {
+            background-color:rgba(222, 184, 135, 0.649);
+        }
+        .followus
+        {
+            text-decoration: underline; 
+            margin-top: 10px;
+            font-style: italic; 
+            font-weight: bold;
+            font-size: 28px;
+        }
+        .footerbox
+        {
+            display: flex;
+        }
+        .socialbox
+        {
+            flex: 33.33%;
+            padding-left: 10px;
+        }
+        .customer
+        {
+            flex: 33.33%;
+        }
+        .payments
+        {
+            flex: 33.33%;
+        }
+
+        </style>
+    </head>
+        <body>
+            <div class="navbar">
+                <nav>
+                    <div class="logo">
+                    <a href="Home.html"><img src="Photos/logo.png" alt="logo" height="120px" width="130px"></a>
+                    </div>
+
+                    <form onsubmit="available()">
+                        <input type="text" name="search" class="searchbar" placeholder="Search for products...">
+                        <input type="submit" value="Go" class="gobutton">
+                    </form>
+                   
+                    <ul>
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="HTML/Products.html">Products</a></li>
+                        <li><a href="HTML/About us.html">About Us</a></li>
+                        <li><a href="HTML/Blog.html">Blog</a></li>
+                        <li><a href="HTML/Research.html">Research</a></li>
+                    </ul>
+                    
+                    <div>
+                        <a href="HTML/Login.html" target="_blank"><button type="button" class="loginsignupbutton">Log In / Sign Up</button></a>
+                    </div>
+                </nav>
+            </div>
+           
+            <div class="banner">
+                <img src="Photos/banner.jpg" alt="banner">
+                    <div class="bannertext">
+                        <h1>Give your place<br>
+                         A Boost of Bonsai!</h1>
+                    </div>
+                    <div class="bannerquote">
+                        <p>Like a plant that starts up in showers and sunshine and does not know which has best helped it to grow,<br>
+                            it is difficult to say whether the hard things or the pleasant things did me the most good.<br><br>-Lucy Larcom</p>
+                    </div>
+            </div>
+        
+            <div class="bonsaiinfo">
+                <h1>What are Bonsai Plants?</h1>
+                <p style="font-size: 20px">A bonsai plant is a small tree or shrub that is grown in a container and trained to have a miniature size and shape. 
+                   Bonsai plants are native to Asia and have been cultivated for centuries in Japan, China, and other countries. 
+                   They are popular for their beauty and the art of training and shaping them.</p>
+                <h2> What is special about Bonsai Plants?</h2>
+                <div style="font-size:20px">
+                <p>Growing a bonsai plant requires patience and dedication, as it can take many years to achieve the desired shape and size. 
+                   Bonsai plants need regular watering, pruning, and fertilizing to maintain their health and appearance.</p>
+                <p>Bonsai plants are often displayed in pots or on tables and make for a beautiful and calming addition to any home or garden. 
+                   They are also popular gifts and can be enjoyed by people of all ages.</p>
+                <p>Bonsai plants have a long history and cultural significance in many parts of Asia, where they have been cultivated for centuries.
+                    They are special as they combine the beauty and tranquility of nature with the art and skill of plant training and care.</p>
+                </div>
+            </div>
+            <div class="shopmorecontainer">
+                <a href="HTML/Blog.html" class="shopmore">Read More About Bonsai Plants</a>
+            </div>
+        
+           
+            <div class="review">
+                <h1 style="text-align: center;font-size: 30px; width: 100%;">What people say about us</h1><hr>
+        
+            <table width="100%">
+                <th style="text-align: center; font-size: 18px;">“I have ordered several times and each time<br>
+                    I get the healthiest, prettiest plants <br>
+                    very quickly. I have been extremely <br>
+                    satisfied with it.”<br>
+                    -Anonymous</th>
+                <th style="text-align: center; font-size: 18px;">“I love The plants! It's a nice way to send it <br>
+                    to people you love who live far away. <br>
+                    Thanks for helping me stay connected!”<br>
+                    -Anonymous</th>
+                <th style="text-align: center; font-size: 18px;">"I received my bonsai plants and it looks<br>
+                    healthy and gorgeuous. It's one of the best<br> 
+                    looking plants I have pulled out of the box.<br> 
+                    I would definitely recommend it to others.<br> 
+                    Thankyou So much!!<br>
+                    -Anonymous</th>
+            </table>
+            </div>
+        
+            <div>
+                <h1 style="font-size: 40px; text-decoration:underline; font-style: italic; margin-left: 10px;">New Arrivals:</h1>
+                <table class="products">
+                    <tr>
+                    <td class="newarrivals">
+                        <img src="Photos/azalea.jpg" class="productsimg">
+                        <h2>AZALEA BONSAI</h2>
+                        <p style="font-size: 25px;">1399NPR <span class="discount">1800NPR</span></p><hr>
+                        <p>Azalea trees add both color and bloom<br> 
+                           to the art of Bonsai. When shaped with<br> 
+                           care and precision, your tiny Azalea tree<br>
+                           can reward you with dazzling<br>
+                           clouds of blossoms.</p><hr>
+
+                        <a href="HTML/Payment.html" target="_blank"><button type="button" class="button2" onclick="">Buy Now</button></a>
+                        <button type="button" class="button2" onclick="Hello()">Add To Cart</button>
+                    </td>
+
+                    <td class="newarrivals">
+                        <img src="Photos/b3.jpg" class="productsimg">
+                        <h2>FICUS MICROCARPA </h2>
+                        <p style="font-size: 25px;">1999NPR <span class="discount">2399NPR</span></p><hr>
+                        <p>Ficus is one of the most popular trees for 
+                        <br>Bonsai.It is an excellent tree for beginners
+                        <br>and pros alike. The tree grows 
+                            oval-shaped, <br>dark leaves. The 
+                            trunk of the ficus is thick, <br>bulbous and 
+                            reddish-gray.</p><hr>
+                        <a href="HTML/Payment.html" target="_blank"><button type="button" class="button2">Buy Now</button></a>
+                        <button type="button" class="button2" onclick="Hello()">Add To Cart</button>
+                    </td>
+                
+                    <td class="newarrivals">
+                        <img src="Photos/b14.jpg" class="productsimg">
+                        <h2>BANYAN TREE</h2>
+                        <p style="font-size: 25px;">2799NPR <span class="discount">3100NPR</span></p><hr>
+                        <p>Banyan trees are a common plant in<br>
+                            the home and office, mainly due to<br>
+                            the fact that they look like a<br>
+                            typical tree with a single trunk and <br>
+                            a spreading canopy.</p><hr>
+                        <a href="HTML/Payment.html" target="_blank"><button type="button" class="button2">Buy Now</button></a>
+                        <button type="button" class="button2" onclick="Hello()">Add To Cart</button>
+                    </td>
+                
+                    <td class="newarrivals">
+                        <img src="Photos/chineseelm.jpg" class="productsimg">
+                        <h2>CHINESE ELM</h2>
+                        <p style="font-size: 25px;">1250NPR <span class="discount">1700NPR</span></p><hr>
+                        <p>The Chinese elm is an excellent for beginners.<br>
+                            Strong branch and root growth makes<br>
+                            it simple to train and shape them.<br>
+                            The Chinese Elm Bonsai tree will continue to<br>
+                            grow new leaves in any desired shape.</p><hr>
+                        <a href="HTML/Payment.html" target="_blank"><button type="button" class="button2">Buy Now</button></a>
+                        <button type="button" class="button2" onclick="Hello()">Add To Cart</button>
+                    </td>
+                    </tr>
+                </table>
+                
+                <div class="shopmorecontainer">
+                <a href="HTML/Products.html" target="_blank" class="shopmore">Shop More</a>
+                </div>
+            </div><hr>
+
+            <div>
+                <h1 style="font-size: 35px; text-decoration:underline; font-style: italic; margin-left: 10px;">Our Members:</h1>
+                <table class="members">
+                    <tr style="text-align: center;">
+                        <td>
+                            <img src="Photos/Jayavir.jpg" alt="Jayavir" width="50%">
+                            <p>Name: Jayavir Basnet</p>
+                            <p>Age: 19yrs</p>
+                            <p>Team: Leader</p>
+                        </td>
+                        <td>
+                            <img src="Photos/Siddharth.jpg" alt="Siddharth" width="50%">
+                            <p>Name: Siddharth Thapa</p>
+                            <p>Age: 19yrs</p>
+                            <p>Team: Member</p>
+                        </td>
+                        <td>
+                            <img src="Photos/kirtan.png" alt="Kirtan" width="50%">
+                            <p>Name: Kirtan Maharjan</p>
+                            <p>Age: 18yrs</p>
+                            <p>Team: Member</p>
+                        </td>
+                        <td>
+                            <img src="Photos/Priyansu.jpg" alt="Priyansu" width="50%">
+                            <p>Name: Priyansu Gurung</p>
+                            <p>Age: 18yrs</p>
+                            <p>Team: Member</p>
+                        </td>
+                    </tr>
+                </table>
+                <div class="knowmorecontainer">
+                    <a href="HTML/About us.html" class="knowmore">Know More</a>
+                </div>
+            </div>
+
+
+            <footer>
+                <div class="footerbox">
+    
+                    <div class="socialbox">
+                        <table width="80%">
+                            <h1 class="followus">Follow us on:</h1>
+                            <tr>
+                                <td><a href="https://www.facebook.com" target="_blank"><img src="Photos/facebook.png" alt="fblogo" height="60px" width="60px"></a></td>
+                                <td><a href="https://www.instagram.com" target="_blank"><img src="Photos/instagram.png" alt="instalogo" height="60px" width="60px"></a></td>
+                                <td><a href="https://twitter.com" target="_blank"><img src="Photos/twitter.png"  alt="twitterlogo" height="60px" width="60px"></a></td>
+                            </tr>
+        
+                            <tr class="followustext">
+                                <td>Facebook</td>
+                                <td>Instagram</td>
+                                <td>Twitter</td>
+                            </tr>
+                        </table>
+                    </div>
+    
+                    <div class="customer">
+                        <h2 style="text-decoration: underline;">Contact Us:</h2>
+                        <div style="font-size: 14px;">
+                        <h3>Email:</h3>
+                        <a href="https://mail.google.com" target="_blank" style="text-decoration: none; color: black;"><p>hariyosupport191@gmail.com</p></a>
+                        <h3>Phone No:</h3>
+                        <a href="https://web.whatsapp.com" target="_blank" style="text-decoration: none; color: black;"><p>+977 9876543210</p></a>
+                        <h3>Address:</h3>
+                        <a href="https://www.google.com/maps/place/Maharajgunj,+Kathmandu+44600/@27.7353566,85.3226995,15z/data=!3m1!4b1!4m5!3m4!1s0x39eb193854e20abb:0x8ff36d1f00e10346!8m2!3d27.7364789!4d85.3304212" target="_blank" style="text-decoration: none; color: black;">
+                            <p>Maharajgunj, Kathmandu, Nepal.</p>
+                        </a>
+                        </div>
+                    </div>
+    
+                    <div class="payments">
+                        <table width="100%">
+                            <h1 class="followus">Payment Partners:</h1>
+                            <tr>
+                                <td><img src="Photos/esewa.png" alt="esewa" height="50px" width="100px"></td>
+                                <td><img src="Photos/khalti.png" alt="khalti" height="50px" width="100px"></td>
+                                <td><img src="Photos/visa.png"  alt="Visa" height="45px" width="90px"></td>
+                                <td><img src="Photos/ime.png"  alt="IMEpay" height="90px" width="90px"></td>
+                            </tr>
+        
+                            <tr>
+                                <td><img src="Photos/mastercard.png" alt="MasterCard" height="50px" width="100px"></td>
+                                <td><img src="Photos/Unionpay.png" alt="Unionpay" height="50px" width="90px"></td>
+                                <td><img src="Photos/Bank.png" alt="BankTransfer" height="120px" width="120px"></td>
+                                <td><img src="Photos/COD.png" alt="CashOnDelivery" height="80px" width="80px"></td>
+                            </tr>
+                        </table>
+                    </div>
+    
+                </div>
+                <p align="Center" style="color: grey;"><b>&copy; Hariyo 2022-23</b></p>
+            </footer>
+    
+
+
+        </body>
+        <script>
+            function Hello()
+            {
+                alert("Your item has been sucessfully added to cart !!! :)");
+            }
+            function available()
+            {
+                alert("Search feature will be available soon !!")
+            }
+        </script>
+</html>

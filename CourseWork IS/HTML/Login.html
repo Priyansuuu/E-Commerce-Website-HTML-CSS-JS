@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login/SignUp</title>
+        <meta name="Description" content="Login Page"/>
+        <meta name="Keywords" content="hariyo, bonsai, nepal, plants, e-commerce"/>
+        <meta name="Author" content="Siddharth"/>
+        <link rel="Stylesheet" href="../CSS/Login.css"> <!--linking the css file-->
+        <link rel="icon" href="../Photos/logo.png">  <!--adding logo in the tab of the webpage-->
+        <style>
+        body
+        {
+        background-color: rgb(255, 246, 240);
+        margin: 0;
+        padding: 0;
+        }
+
+        p
+        {
+        font-family:Arial, Helvetica, sans-serif;
+        }
+
+        .navbar
+        {
+        background-color: rgba(117, 210, 30, 0.796);
+        }
+        nav
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        nav ul li
+        {
+            list-style-type: none;
+            display: inline-block;
+            padding: 5px 27px;
+        }
+        nav ul li a
+        {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 23px;
+        }
+        nav ul li a:hover
+        {
+            color: blueviolet; 
+        }
+        
+        .loginsignupbutton
+        {
+            border: none;
+            background-color: burlywood;
+            padding: 12px 25px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 15px;
+            margin-right: 10px;
+        }
+        .loginsignupbutton:hover
+        {
+            transform: scale(1.06);
+            cursor: pointer;
+        }
+
+        .logo
+        {
+            margin-left: 0%;
+        }
+        
+        .searchbar
+        {
+            border: 1px solid black;
+            width: 340px;
+            height: 25px;
+            margin-top: 2px;
+            border-radius: 4px;
+        }
+        .gobutton
+        {
+            font-weight: bold;
+            width: 40px;
+            height: 28px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        .gobutton:hover
+        {
+            background-color: rgba(128, 128, 128, 0.71);
+        }
+
+        footer
+        {
+            background-color:rgba(222, 184, 135, 0.649);
+        }
+        .followus
+        {
+            text-decoration: underline; 
+            margin-top: 10px;
+            font-style: italic; 
+            font-weight: bold;
+            font-size: 28px;
+        }
+        .footerbox
+        {
+            display: flex;
+        }
+        .socialbox
+        {
+            flex: 33.33%;
+            padding-left: 10px;
+        }
+        .customer
+        {
+            flex: 33.33%;
+        }
+        .payments
+        {
+            flex: 33.33%;
+        }
+
+        </style>
+    </head>
+        <body>
+            <div class="navbar">
+                <nav>
+                    <div class="logo">
+                    <a href="../Home.html"><img src="../Photos/logo.png" alt="logo" height="120px" width="130px"></a>
+                    </div>
+
+                    <form onsubmit="available()">
+                        <input type="text" name="search" class="searchbar" placeholder="Search for products...">
+                        <input type="submit" value="Go" class="gobutton">
+                    </form>
+                   
+                    <ul>
+                        <li><a href="../Home.html">Home</a></li>
+                        <li><a href="Products.html">Products</a></li>
+                        <li><a href="About us.html">About Us</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="Research.html">Research</a></li>
+                    </ul>
+                    
+                    <div>
+                        <a href="Login.html"><button type="button" class="loginsignupbutton">Log In / Sign Up</button></a>
+                    </div>
+                </nav>
+            </div>
+
+        <div class="loginsignupcontainer">
+            <div class="logincontainer">
+                <form name="login" onsubmit="signin()">
+                    <h1 class="loginheading">Sign In to your account</h1><hr>
+                        <div class="firstrow">
+                            <div class="email">
+                            <h3>Email:</h3>
+                            <input type="email" name="email" class="input">
+                            </div>
+                        </div>
+                        <div class="secondrow">
+                            <div class="password">
+                                <h3>Password:</h3>
+                                <input type="password" name="password" class="input"><br>
+                                <a href="" class="forgotpass">Forgot Password?</a>
+                            </div>
+                        </div>
+                        <div class="loginbuton">
+                            <input type="submit" value="Log In" name="login" class="loginbut">
+                        </div>
+                </form>
+            </div>
+
+            <div class="signupcontainer">
+                <form name="create" onsubmit="signup()">
+                    <h1 class="signupheading">Create New Account</h1><hr>
+                    <div class="firstrow">
+                        <div class="firstname">
+                        <h3>First Name:</h3>
+                        <input type="text" name="fname" class="input1">
+                        </div>
+                        
+                        <div class="lastname">
+                        <h3>Last Name:</h3>
+                        <input type="text" name="lname" class="input1">
+                        </div>
+                    </div>
+                    
+                    <div class="secondrow">
+                        <div class="email1">
+                        <h3>Email:</h3>
+                        <input type="email" name="email" class="input1">
+                        </div>
+                    </div>
+
+                    <div class="thirdrow">
+                        <div class="password1">
+                        <h3>Password:</h3>
+                        <input type="password" name="password" class="input1">
+                        </div>
+                    </div>
+
+                    <div class="fourthrow">
+                        <div class="country">
+                            <h3>Country:</h3>
+                            <Select name="country" class="input1">
+                                <option value="Nepal">Nepal</option>
+                                <option value="India">India</option>
+                                <option value="China">China</option>
+                                <option value="Bhutan">Bhutan</option>
+                                <option value="Bangladesh">Bangladesh</option>
+                                <option value="Srilanka">Sri lanka</option>
+                            </Select>
+                        </div>
+                        <div class="phoneno">
+                            <h3>Phone Number:</h3>
+                            <input type="tel" name="phone" placeholder="+9** 123-456-7890" class="input1">
+                        </div>
+                    </div>
+                    <div class="signupbutton2">
+                        <input type="submit" value="Sign Up" name="login" class="signupbut">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+            <footer>
+                <div class="footerbox">
+    
+                    <div class="socialbox">
+                        <table width="80%">
+                            <h1 class="followus">Follow us on:</h1>
+                            <tr>
+                                <td><a href="https://www.facebook.com" target="_blank"><img src="../Photos/facebook.png" alt="fblogo" height="60px" width="60px"></a></td>
+                                <td><a href="https://www.instagram.com" target="_blank"><img src="../Photos/instagram.png" alt="instalogo" height="60px" width="60px"></a></td>
+                                <td><a href="https://twitter.com" target="_blank"><img src="../Photos/twitter.png"  alt="twitterlogo" height="60px" width="60px"></a></td>
+                            </tr>
+        
+                            <tr class="followustext">
+                                <td>Facebook</td>
+                                <td>Instagram</td>
+                                <td>Twitter</td>
+                            </tr>
+                        </table>
+                    </div>
+                
+                    <div class="customer">
+                        <h2 style="text-decoration: underline;">Contact Us:</h2>
+                        <div style="font-size: 14px;">
+                            <h3>Email:</h3>
+                            <a href="https://mail.google.com" target="_blank" style="text-decoration: none; color: black;"><p>hariyosupport191@gmail.com</p></a>
+                            <h3>Phone No:</h3>
+                            <a href="https://web.whatsapp.com" target="_blank" style="text-decoration: none; color: black;"><p>+977 9876543210</p></a>
+                            <h3>Address:</h3>
+                            <a href="https://www.google.com/maps/place/Maharajgunj,+Kathmandu+44600/@27.7353566,85.3226995,15z/data=!3m1!4b1!4m5!3m4!1s0x39eb193854e20abb:0x8ff36d1f00e10346!8m2!3d27.7364789!4d85.3304212" target="_blank" style="text-decoration: none; color: black;">
+                                <p>Maharajgunj, Kathmandu, Nepal.</p>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="payments">
+                        <table width="100%">
+                            <h1 class="followus">Payment Partners:</h1>
+                            <tr>
+                                <td><img src="../Photos/esewa.png" alt="esewa" height="50px" width="100px"></td>
+                                <td><img src="../Photos/khalti.png" alt="khalti" height="50px" width="100px"></td>
+                                <td><img src="../Photos/visa.png"  alt="Visa" height="45px" width="90px"></td>
+                                <td><img src="../Photos/ime.png"  alt="IMEpay" height="90px" width="90px"></td>
+                            </tr>
+        
+                            <tr>
+                                <td><img src="../Photos/mastercard.png" alt="MasterCard" height="50px" width="100px"></td>
+                                <td><img src="../Photos/Unionpay.png" alt="Unionpay" height="50px" width="90px"></td>
+                                <td><img src="../Photos/Bank.png" alt="BankTransfer" height="120px" width="120px"></td>
+                                <td><img src="../Photos/COD.png" alt="CashOnDelivery" height="80px" width="80px"></td>
+                            </tr>
+                        </table>
+                    </div>
+    
+                </div>
+                <p align="Center" style="color: grey;"><b>&copy; Hariyo 2022-23</b></p>
+            </footer>
+        </body>
+        <script>
+            function signup()
+            {
+                var Fname = document.forms['create']['fname'].value;
+                var Lname = document.forms['create']['lname'].value;
+                var Email = document.forms['create']['email'].value;
+                var Pw = document.forms['create']['password'].value;
+                var number = document.forms['create']['phone'].value;
+                if (Fname=="" || Lname=="" || Email=="" || Pw=="" || number=="")
+                {
+                    alert("Empty field found, Please fill all the details !!");
+                }
+                else
+                {
+                    alert("Your account has been successfully created !!");
+                }
+            }
+            function signin()
+            {
+                var Email = document.forms['login']['email'].value;
+                var Pw = document.forms['login']['password'].value;
+                if (Email=="" || Pw=="")
+                {
+                    alert("Your email or password is empty, Please fill all the details !!");
+                }
+                else
+                {
+                    alert("Sign in feature will be available soon !!");
+                }
+            }
+            function available()
+            {
+                alert("Search feature will be available soon !!")
+            }
+        </script>
+</html>

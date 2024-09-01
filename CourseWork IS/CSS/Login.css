@@ -1,0 +1,99 @@
+.loginsignupcontainer
+{
+    display: flex;
+}
+
+.logincontainer
+{
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    flex: 35%;
+    margin-top: 25px;
+    margin-left: 15px;
+    margin-right: 20px;
+    margin-bottom: 180px;
+}
+.loginheading,.signupheading
+{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.firstrow, .secondrow, .thirdrow, .fourthrow
+{
+    display: flex;
+}
+.email, .password
+{
+    margin-left: 35px;
+}
+.input
+{
+    width: 500px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+.forgotpass
+{
+    text-decoration: none;
+    font-size: 13px;
+}
+.loginbuton,.signupbutton2
+{
+    text-align: center;
+}
+.loginbut
+{
+    border: 1px solid black;
+    background-color: rgb(105, 128, 0);
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 20px;
+    color: white;
+    width: 30%;
+    margin-top: 20px;
+}
+.loginbut:hover,.signupbut:hover
+{
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+.signupcontainer
+{
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    flex: 50%;
+    margin-top: 25px;
+    margin-left: 0px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.input1
+{
+    width: 300px;
+    height: 23px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+.firstname,.lastname,.country,.phoneno, .email1,.password1
+{
+    margin-left: 80px;
+}
+.signupbut
+{
+    border: 1px solid black;
+    background-color: rgb(105, 128, 0);
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    width: 25%;
+    margin-top: 35px;
+    margin-bottom: 18px;
+}

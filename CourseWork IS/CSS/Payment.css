@@ -1,0 +1,57 @@
+.paymentcontainer
+{
+    width: 60%;
+    height: 100%;
+    border: 2px solid black;
+    margin-top: 50px;
+    margin-left: 20%;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    background-color: rgba(245, 245, 245, 0.674);
+}
+.checkout
+{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.firstrow, .secondrow, .thirdrow, .fourthrow, .fifthrow
+{
+    display: flex;
+    margin-left: 14%;
+}
+.firstname, .lastname, .address, .country, .state, .zipcode, .email, .phoneno
+{
+    flex: 50%;
+}
+.input
+{
+    width: 260px;
+    height: 36px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.paymentoption
+{
+    width: 73px;
+    height: 40px;
+}
+
+.proceedbutton
+{
+    border: none;
+    background-color: black;
+    padding: 16px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    margin-top: 70px;
+    margin-left: 40%;
+}
+.proceedbutton:hover
+{
+    transform: scale(1.1);
+    cursor: pointer;
+    color: violet;
+}

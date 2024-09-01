@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Products</title>
+        <meta name="Description" content="Products Page"/>
+        <meta name="Keywords" content="hariyo, bonsai, nepal, plants, e-commerce"/>
+        <meta name="Author" content="Siddharth"/>
+        <link rel="Stylesheet" href="../CSS/products.css">
+        <link rel="icon" href="../Photos/logo.png">
+        <style>
+        body
+        {
+            background-color: rgb(246, 222, 206);
+            margin: 0;
+            padding: 0;
+        }
+        p
+        {
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .navbar
+        {
+            background-color: rgba(117, 210, 30, 0.796);
+        }
+        nav
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        nav ul li
+        {
+            list-style-type: none;
+            display: inline-block;
+            padding: 5px 27px;
+        }
+        nav ul li a
+        {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 23px;
+        }
+        nav ul li a:hover
+        {
+            color: blueviolet;
+        }
+        button
+        {
+            border: none;
+            background-color: burlywood;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 15px;
+            margin-right: 10px;
+        }
+        button:hover
+        {
+            transform: scale(1.1);
+            cursor: pointer;
+            color: brown;
+        }
+
+        .logo
+        {
+            margin-left: 0%;
+        }
+        .button1
+        {
+            margin-right: 8px;
+        }
+        .searchbar
+        {
+            border: 1px solid black;
+            width: 340px;
+            height: 25px;
+            margin-top: 2px;
+            border-radius: 4px;
+        }
+        .gobutton
+        {
+            font-weight: bold;
+            width: 40px;
+            height: 28px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        .gobutton:hover
+        {
+            background-color: rgba(128, 128, 128, 0.71);
+        }
+        footer
+        {
+            background-color:rgba(222, 184, 135, 0.649);
+        }
+        .followus
+        {
+            text-decoration: underline;
+            margin-top: 10px;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 28px;
+        }
+        .footerbox
+        {
+            display: flex;
+        }
+        .socialbox
+        {
+            flex: 33.33%;
+            padding-left: 10px;
+        }
+        .customer
+        {
+            flex: 33.33%;
+        }
+        .payments
+        {
+            flex: 33.33%;
+        }
+        </style>
+    </head>
+        <body>
+            <div class="navbar">
+                <nav>
+                    <div class="logo">
+                    <a href="../Home.html"><img src="../Photos/logo.png" alt="logo" height="120px" width="130px"></a>
+                    </div>
+                    
+                    <form onsubmit="available()">
+                        <input type="text" name="search" class="searchbar" placeholder="Search for products...">
+                        <input type="submit" value="Go" class="gobutton">
+                    </form>
+                    
+                    <ul>
+                        <li><a href="../Home.html">Home</a></li>
+                        <li><a href="Products.html">Products</a></li>
+                        <li><a href="About us.html">About Us</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="Research.html">Research</a></li>
+                    </ul>
+                    
+                    <div>
+                        <a href="../HTML/Login.html" target="_blank"><button type="button">Log In / Sign Up</button></a>
+                    </div>
+                </nav>
+            </div>
+
+        <div>
+            
+            <div class="slider">
+                <div id="img">
+                    <img src="../Photos/S1.jpg">
+                </div>
+            </div>
+            <h1 class="allproductsheading">All Products:</h1>
+            <table class="products">
+            <tr>
+            <td class="allproducts" id="item1">
+                <img src="../Photos/b2.jpg" class="productsimg">
+                <h2>JADE BONSAI</h2>
+                <p style="font-size: 25px;">1299NPR <span class="discount">1599NPR</span></p><hr>
+                <p>Jade bonsai are originated from South Africa. <br>
+                This is an indoor-only evergreen succulent<br>
+                which is known as the "money tree" of bonsais.<br>
+                However, putting the plants outside during the<br>
+                summer can be beneficial for it.</p><hr>
+
+                
+                <a href="../HTML/Payment.html" target="_blank"><button type="button" class="button2">Buy Now</button></a>
+                <button type="button" class="button2" onclick="Hello()">Add To Cart</button>
+            </td>
+            
+            <td class="allproducts" id="item2">
+                <img src="../Photos/b3.jpg" class="productsimg">
+                <h2>FICUS MICROCARPA </h2>
+                <p style="font-size: 25px;">1999NPR <span class="discount">2399NPR</span></p><hr>
+                <p>Ficus is one of the most popular trees for 
+                    <br>Bonsai.It is an excellent tree for beginners
+                    <br>and pros alike. The tree grows 
+                    oval-shaped, <br>dark leaves. The 
+                    trunk of the ficus is thick, <br>bulbous and 
+                    reddish-gray.</p><hr>
+                <a href="../HTML/Payment.html" target="_blank"><button type="button" class="button2">Buy Now</button></a>
+                <button type="button" class="button2" onclick="Hello()">Add To Cart</button>
+            </td>
+            
+            <td class="allproducts" id="item3">
+                <img src="../Photos/b4.jpg" class="productsimg">
+                <h2>FICUS ICELAND</h2>
+                <p style="font-size: 25px;">1599NPR <span class="discount">1999NPR</span></p><hr>
+                <p>Ficus Iceland Bonsai Plant is one of the<br>
+                    most popular indoor plants which are<br>
+                    quite useful in decorating your home <br>
+                    interiors in a beautiful way.It is an<br>
+                    excellent tree for beginners</p><hr>
+                <a href="Payment.html" target="_blank"><button type="button" class="button2">Buy Now</button></a>
+                <button type="button" class="button2" onclick="Hello()">Add To Cart</button>
+            </td>
+            
+            <td class="allproducts" id="item4">
+                <img src="../Photos/azalea bonsai.jpg" class="productsimg">
+                <h2>AZALEA BONSAI</h2>
+                <p style="font-size: 25px;">1399NPR <span class="discount">1800NPR</span></p><hr>
+                <p>Azalea trees add both color and bloom<br> 
+                    to the art of Bonsai. When shaped with<br> 
+                    care and precision, your tiny Azalea tree<br>
+                    can reward you with dazzling<br>
+                    clouds of blossoms.</p><hr>
+                <a href="Payment.html" target="_blank"><button type="button" class="button2">Buy Now</button></a>
+                <button type="button" class="button2" onclick="Hello()">Add To Cart</button>
+            </td>
+            </tr>
+            
+            <tr>
+            <td class="allproducts" id="item5">
+                <img src="../Photos/b14.jpg" class="productsimg">
+                <h2>BANYAN TREE</h2>
+                <p style="font-size: 25px;">2799NPR <span class="discount">3100NPR</span></p><hr>
+                <p>Banyan trees are a common plant in<br>
+                    the home and office, mainly due to<br>
+                    the fact that they look like a<br>
+                    typical tree with a single trunk and <br>
+                    a spreading canopy.</p><hr>
+                    <a href="Payment.html" target="_blank"><button type="button" class="button2">Buy Now</button></a>
+                <button type="button" class="button2" onclick="Hello()">Add To Cart</button>
+            </td>
+            
+            <td class="allproducts" id="item6">
+                <img src="../Photos/b7.jpg" class="productsimg">
+                <h2>FICUS PANDA</h2>
+                <p style="font-size: 25px;">3099NPR <span class="discount">3300NPR</span></p><hr>
+                <p>The Ficus panda has bright dark green leaves,<br>
+                    leaves, more rounded, pointed and waxy, the <br>
+                    stem is grayish-brown tending to light;<br>
+                    the plant is prone to developing aerial <br>
+                    roots over time.</p><hr>
+                <a href="Payment.html" target="_blank"><button type="button" class="button2">Buy Now</button></a>
+                <button type="button" class="button2" onclick="Hello()">Add To Cart</button>
+            </td>
+           
+            <td class="allproducts" id="item7">
+                <img src="../Photos/chineseelm.jpg" class="productsimg">
+                <h2>CHINESE ELM</h2>
+                <p style="font-size: 25px;">1250NPR <span class="discount">1700NPR</span></p><hr>
+                <p>The Chinese elm is an excellent for beginners.<br>
+                Strong branch and root growth makes<br>
+                it simple to train and shape them.<br>
+                The Chinese Elm Bonsai tree will continue to<br>
+                grow new leaves in any desired shape.</p><hr>
+                
+                <a href="Payment.html" target="_blank"><button type="button" class="button2">Buy Now</button></a>
+                <button type="button" class="button2" onclick="Hello()">Add To Cart</button>
+            </td>
+            
+            <td class="allproducts" id="item8">
+                <img src="../Photos/b9.jpg" class="productsimg">
+                <h2>SILVER CYPRESS</h2>
+                <p style="font-size: 25px;">1030NPR <span class="discount">1350NPR</span></p><hr>
+                <p>The Silver Cypress is a dense, upright,<br>
+                broadly pyramidal, asymmetrical small tree<br>
+                that is grown for its handsome foliage. It has<br>
+                soft, silvery blue-green leaves, Awl shaped, <br>
+                curving with a fine point but not prickly.</p><hr>
+                <a href="Payment.html" target="_blank"><button type="button" class="button2">Buy Now</button></a>
+                <button type="button" class="button2" onclick="Hello()">Add To Cart</button>
+            </td>
+            </tr>
+            
+            <tr>
+            <td class="allproducts" id="item9">
+                <img src="../Photos/japanese.webp" class="productsimg">
+                <h2>JAPANESE GREEN MAPLE</h2>
+                <p style="font-size: 25px;">7200NPR <span class="discount">7700NPR</span></p><hr>
+                <p>The green leaves of the Japanese Green Maple<br>
+                turns color in the autumn. Leaves may burn <br>
+                slightly if kept in warm climate. This plants are<br>
+                highly prized due to their unique leaves.</p><hr>
+                
+                <a href="Payment.html" target="_blank"><button type="button" class="button2">Buy Now</button></a>
+                <button type="button" class="button2" onclick="Hello()">Add To Cart</button>
+            </td>
+            
+            <td class="allproducts" id="item10">
+                <img src="../Photos/b11.jpg" class="productsimg">
+                <h2>BOXWOOD BONSAI</h2>
+                <p style="font-size: 25px;">4599NPR <span class="discount">5000NPR</span></p><hr>
+                <p>Boxwood is a very hardy plant and grows<br>
+                    rapidly as well. This is mostly used as<br>
+                    an ornamental plant and is grown and shaped<br>
+                    into a variety of designs.</p><hr>
+                <a href="Payment.html" target="_blank"><button type="button" class="button2">Buy Now</button></a>
+                <button type="button" class="button2" onclick="Hello()">Add To Cart</button>
+            </td>
+            
+            <td class="allproducts" id="item11">
+                <img src="../Photos/b12.jpg" class="productsimg">
+                <h2>CHINESE PEPPER </h2>
+                <p style="font-size: 25px;">1650NPR <span class="discount">2000NPR</span></p><hr>
+                <p>The Chinese Pepper, which is also called<br>
+                Sichuan Pepper, grows in many parts of<br>
+                Asia and is especially common in the <br>
+                Himalayas, Japan, and Korea.</p><hr>
+                <a href="Payment.html" target="_blank"><button type="button" class="button2">Buy Now</button></a>
+                <button type="button" class="button2" onclick="Hello()">Add To Cart</button>
+            </td>
+            
+            <td class="allproducts" id="item12">
+                <img src="../Photos/cotoneaster.webp" class="productsimg">
+                <h2>COTONEASTER BONSAI</h2>
+                <p style="font-size: 25px;">3200NPR <span class="discount">3600NPR</span></p><hr>
+                <p>It is easy to care cotoneaser which makes<br>
+                an ideal choice for the beginners. The<br>
+                cotoneaster is characterized by its <br>
+                small leaves and berry-like flowers<br>
+                which it produces.</p><hr>
+                <a href="Payment.html" target="_blank"><button type="button" class="button2">Buy Now</button></a>
+                <button type="button" class="button2" onclick="Hello()">Add To Cart</button>
+            </td>
+            </tr>
+
+            </table>
+        </div>
+
+        <footer>
+        <div class="footerbox">
+            <div class="socialbox">
+                <table width="80%">
+                    <h1 class="followus">Follow us on:</h1>
+                    <tr>
+                    <td><a href="https://www.facebook.com" target="_blank"><img src="../Photos/facebook.png" alt="fblogo" height="60px" width="60px"></a></td>
+                    <td><a href="https://www.instagram.com" target="_blank"><img src="../Photos/instagram.png" alt="instalogo" height="60px" width="60px"></a></td>
+                    <td><a href="https://twitter.com" target="_blank"><img src="../Photos/twitter.png" alt="twitterlogo" height="60px" width="60px"></a></td>
+                    </tr>
+                    <tr class="followustext">
+                    <td>Facebook</td>
+                    <td>Instagram</td>
+                    <td>Twitter</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="customer">
+                <h2 style="text-decoration: underline;">Contact Us:</h2>
+                <div style="font-size: 14px;">
+                    <h3>Email:</h3>
+                        <a href="https://mail.google.com" target="_blank" style="text-decoration: none; color: black;"><p>hariyosupport191@gmail.com</p></a>
+                        <h3>Phone No:</h3>
+                        <a href="https://web.whatsapp.com" target="_blank" style="text-decoration: none; color: black;"><p>+977 9876543210</p></a>
+                        <h3>Address:</h3>
+                        <a href="https://www.google.com/maps/place/Maharajgunj,+Kathmandu+44600/@27.7353566,85.3226995,15z/data=!3m1!4b1!4m5!3m4!1s0x39eb193854e20abb:0x8ff36d1f00e10346!8m2!3d27.7364789!4d85.3304212" target="_blank" style="text-decoration: none; color: black;">
+                            <p>Maharajgunj, Kathmandu, Nepal.</p>
+                        </a>
+                </div>
+            </div>
+
+            <div class="payments">
+                <table width="100%">
+                    <h1 class="followus">Payment Partners:</h1>
+                    <tr>
+                    <td><img src="../Photos/esewa.png" alt="esewa" height="50px" width="100px"></td>
+                    <td><img src="../Photos/khalti.png" alt="khalti" height="50px" width="100px"></td>
+                    <td><img src="../Photos/visa.png" alt="Visa" height="45px" width="90px"></td>
+                    <td><img src="../Photos/ime.png" alt="IMEpay" height="90px" width="90px"></td>
+                    </tr>
+                    <tr>
+                    <td><img src="../Photos/mastercard.png" alt="MasterCard" height="50px" width="100px"></td>
+                    <td><img src="../Photos/Unionpay.png" alt="Unionpay" height="50px" width="90px"></td>
+                    <td><img src="../Photos/Bank.png" alt="BankTransfer" height="120px" width="120px"></td>
+                    <td><img src="../Photos/COD.png" alt="CashOnDelivery" height="80px" width="80px"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+            <p align="Center" style="color: grey;"><b>&copy; Hariyo 2022-23</b></p>
+        </footer>
+    </body>
+    <script type="text/javascript" src="../JavaScript/Productsslider.js">
+        
+    </script>
+</html>
